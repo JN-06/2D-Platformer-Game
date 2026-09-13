@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-o", "chess_game",
+        "main.c",
+        "-lraylib",
+        "-lGL", "-lm", "-lpthread", "-ldl", "-lrt", "-lX11"
+      ],
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Build chess with raylib"
+    }
+  ]
+}
